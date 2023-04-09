@@ -3,15 +3,11 @@ contract Escrow {
 	uint public productId;
 	address public buyer;
 	address public seller;
-	// 托管人
 	address public arbiter;
 	uint public amount;
-	// 是否释放
 	bool public fundsDisbursed;
-	// 释放给卖家
 	mapping (address => bool) releaseAmount;
 	uint public releaseCount;
-	// 回退给买家
 	mapping (address => bool) refundAmount;
 	uint public refundCount;
 
