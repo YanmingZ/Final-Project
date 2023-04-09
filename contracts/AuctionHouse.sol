@@ -3,7 +3,7 @@ pragma solidity ^0.8.17;
 
 import "../contracts/Escrow.sol";
 
-contract EcommerceStore  {
+contract AuctionHouse  {
     // 商品状态
     enum ProductStatus {
         Open,
